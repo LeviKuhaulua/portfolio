@@ -1,6 +1,6 @@
 # Purpose
 
-To help develop my skills in Front-End Web Development and learn the process for:
+To help develop my skills in web development and learn the process for:
 
 - Folder/File Structure
 - Project Setup
@@ -10,3 +10,6 @@ To help develop my skills in Front-End Web Development and learn the process for
   - Figma
 - Best practices for front-end web development.
 - Github Issues and PRs
+
+While it is a small project, this will help me with getting accustomed to using tools
+that web developers use to develop and maintain their projects (no backend just yet lol).
