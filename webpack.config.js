@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    home: "./src/pages/Index.jsx",
+    index: "./src/pages/Index.jsx",
     // Add more when the time comes.
   },
   output: {

@@ -6,7 +6,9 @@ const Index = () => {
   return (
     <>
       {/* Configure Tailwind with Webpack and React later */}
-      <h1 className="text-3xl font-bold underline-offset-2">Hello World</h1>
+      <h1 className="text-5xl font-bold underline underline-offset-4">
+        Hello World
+      </h1>
     </>
   );
 };
