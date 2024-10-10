@@ -3,7 +3,6 @@ const path = require("path");
 module.exports = {
   entry: {
     index: "./src/pages/Index.jsx",
-    // Add more when the time comes.
   },
   output: {
     path: path.resolve(__dirname, "./public/dist"),
