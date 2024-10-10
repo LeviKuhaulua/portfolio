@@ -5,7 +5,7 @@ import "../styles/styles.css";
 const Index = () => {
   return (
     <>
-      <div className="h-screen bg-slate-800 text-stone-200">Hello World!</div>
+      <div>Hello World!</div>
     </>
   );
 };
