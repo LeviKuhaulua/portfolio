@@ -5,10 +5,7 @@ import "../styles/styles.css";
 const Index = () => {
   return (
     <>
-      {/* Configure Tailwind with Webpack and React later */}
-      <h1 className="text-5xl font-bold underline underline-offset-4">
-        Hello World
-      </h1>
+      <div className="h-screen bg-slate-800 text-stone-200">Hello World!</div>
     </>
   );
 };
