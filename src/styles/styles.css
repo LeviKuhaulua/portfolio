@@ -553,3 +553,16 @@ video {
 [hidden] {
   display: none;
 }
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-background {
+  background-color: oklab(15.68% 0.023 -0.04);
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
