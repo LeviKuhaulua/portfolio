@@ -7,7 +7,7 @@ const Header = () => {
       <header className="w-screen flex flex-col justify-center items-center gap-4 py-4">
         <section className="space-y-5">
           <h1 className="text-2xl font-medium">Levi Kuhaulua</h1>
-          <ul className="flex flex-row gap-4 justify-center items-center">
+          <ul className="flex flex-row gap-8 justify-center items-center">
             <li>
               <a href="https://www.github.com/LeviKuhaulua" target="_blank">
                 <p class="sr-only">Take me to my Github page</p>
@@ -18,6 +18,7 @@ const Header = () => {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
+                  className="scale-125"
                 >
                   <g clip-path="url(#clip0_1696_1313)">
                     <path
@@ -49,6 +50,7 @@ const Header = () => {
                   height="20"
                   viewBox="0 0 20 20"
                   fill="none"
+                  className="scale-125"
                 >
                   <g clip-path="url(#clip0_1696_1277)">
                     <path
@@ -75,6 +77,7 @@ const Header = () => {
                   height="16"
                   viewBox="0 0 20 16"
                   fill="none"
+                  className="scale-125"
                 >
                   <path
                     d="M0.00366211 2.512L9.99991 7.84267L19.9962 2.512C19.9592 1.83259 19.68 1.19398 19.2159 0.72697C18.7519 0.259954 18.1379 -0.00012478 17.4999 4.49112e-08H2.49991C1.86189 -0.00012478 1.24797 0.259954 0.783884 0.72697C0.319797 1.19398 0.0406672 1.83259 0.00366211 2.512Z"
