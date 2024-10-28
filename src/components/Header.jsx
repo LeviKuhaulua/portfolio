@@ -4,10 +4,10 @@ import "../styles/styles.css";
 const Header = () => {
   return (
     <>
-      <header className="w-screen flex flex-col justify-center items-center gap-4 py-4">
+      <header className="w-screen flex flex-col justify-center items-center gap-4 py-4 md:flex-row md:justify-start md:items-start md:px-4 md:gap-8">
         <section className="space-y-5">
           <h1 className="text-2xl font-medium">Levi Kuhaulua</h1>
-          <ul className="flex flex-row gap-8 justify-center items-center">
+          <ul className="flex flex-row gap-8 justify-center items-center md:justify-start">
             <li>
               <a href="https://www.github.com/LeviKuhaulua" target="_blank">
                 <p class="sr-only">Take me to my Github page</p>
@@ -92,7 +92,7 @@ const Header = () => {
             </li>
           </ul>
         </section>
-        <p className="text-gray-300/80 text-xs font-extralight text-center text-pretty">
+        <p className="text-gray-300/80 text-xs font-extralight text-center md:text-start md:text-pretty md:text-sm md:font-extralight">
           I'm a student at UH Mānoa studying Computer Science. I am passionate
           about web development and currently learning the technologies
           developers use to create websites.{" "}
