@@ -6,7 +6,6 @@ import Header from "../components/Header";
 const Index = () => {
   return (
     <div className="h-screen text-white bg-background">
-      <Header />
       <div>Hello World!</div>
     </div>
   );
