@@ -11,13 +11,14 @@ const Index = () => {
 =======
 import "../components/Header";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="h-screen text-white bg-background">
+    <div className="min-h-screen text-white bg-background">
       <Header />
->>>>>>> cc14909cb0b628f5e026c6260667f2905b893f86
-      <div>Hello World!</div>
+      <div>Hello World</div>
+      <Footer />
     </div>
   );
 };
