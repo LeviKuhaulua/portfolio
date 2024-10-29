@@ -1,7 +1,6 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import "../styles/styles.css";
-import Header from "../components/Header";
 
 const Index = () => {
   return (
