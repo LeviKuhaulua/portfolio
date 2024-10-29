@@ -9,6 +9,7 @@ const Index = () => {
   return (
     <div className="min-h-screen text-white bg-background">
       <Header />
+      <div>Hello World</div>
       <Footer />
     </div>
   );
