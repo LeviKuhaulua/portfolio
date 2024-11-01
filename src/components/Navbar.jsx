@@ -1,7 +1,5 @@
 import * as React from "react";
 import "../styles/styles.css";
-import { useState } from "react";
-import Button from "./Button";
 
 const Navbar = (props) => {
   return (
