@@ -587,10 +587,6 @@ video {
   width: 100vw;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .scale-125 {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -621,10 +617,6 @@ video {
   align-items: center;
 }
 
-.items-stretch {
-  align-items: stretch;
-}
-
 .justify-start {
   justify-content: flex-start;
 }
@@ -641,22 +633,10 @@ video {
   gap: 2rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
-.self-stretch {
-  align-self: stretch;
 }
 
 .rounded-md {
@@ -789,34 +769,6 @@ video {
   transition-duration: 250ms;
 }
 
-.last\:grow:last-child {
-  flex-grow: 1;
-}
-
-.last\:items-stretch:last-child {
-  align-items: stretch;
-}
-
-.last\:justify-center:last-child {
-  justify-content: center;
-}
-
-.last\:justify-stretch:last-child {
-  justify-content: stretch;
-}
-
-.last\:self-center:last-child {
-  align-self: center;
-}
-
-.last\:self-stretch:last-child {
-  align-self: stretch;
-}
-
-.last\:justify-self-center:last-child {
-  justify-self: center;
-}
-
 .hover\:bg-accent:hover {
   background-color: oklab(75.43% -0.056 0.12);
 }
@@ -873,6 +825,11 @@ video {
     text-align: start;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -880,14 +837,6 @@ video {
 
   .md\:font-extralight {
     font-weight: 200;
-  }
-
-  .md\:last\:grow-0:last-child {
-    flex-grow: 0;
-  }
-
-  .md\:last\:self-start:last-child {
-    align-self: flex-start;
   }
 }
 
