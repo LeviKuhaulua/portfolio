@@ -12,7 +12,7 @@ const Header = () => {
           <ul className="flex flex-row gap-8 justify-center items-center md:justify-start">
             <li>
               <a href="https://www.github.com/LeviKuhaulua" target="_blank">
-                <p class="sr-only">Click me to go to my Github page</p>
+                <p className="sr-only">Click me to go to my Github page</p>
                 {/* Github icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/levi-kuhaulua/"
                 target="_blank"
               >
-                <p class="sr-only">Click me to go to my LinkedIn Page</p>
+                <p className="sr-only">Click me to go to my LinkedIn Page</p>
                 {/* LinkedIn Icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
