@@ -605,6 +605,10 @@ video {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -615,6 +619,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
 .gap-4 {
@@ -639,12 +647,20 @@ video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-t {
   border-top-width: 1px;
 }
 
 .border-accent {
   border-color: oklab(75.43% -0.056 0.12);
+}
+
+.border-secondary {
+  border-color: oklab(48.82% 0.060 0.08);
 }
 
 .border-t-white\/30 {
@@ -655,8 +671,31 @@ video {
   background-color: oklab(15.68% 0.023 -0.04);
 }
 
+.bg-primary {
+  background-color: oklab(71.59% 0.077 -0.10);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-1\.5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
 }
 
 .py-4 {
@@ -699,6 +738,14 @@ video {
   font-weight: 400;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
+.text-background {
+  color: oklab(15.68% 0.023 -0.04);
+}
+
 .text-gray-300\/80 {
   color: rgb(209 213 219 / 0.8);
 }
@@ -706,6 +753,40 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  color: oklab(71.59% 0.077 -0.10);
+}
+
+.text-white\/60 {
+  color: rgb(255 255 255 / 0.6);
+}
+
+.text-white\/70 {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.text-text {
+  color: oklab(91.92% 0.020 -0.03);
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[250ms\] {
+  transition-duration: 250ms;
+}
+
+.hover\:bg-accent:hover {
+  background-color: oklab(75.43% -0.056 0.12);
+}
+
+.hover\:bg-secondary:hover {
+  background-color: oklab(48.82% 0.060 0.08);
 }
 
 @media (min-width: 768px) {
@@ -741,6 +822,11 @@ video {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:text-start {
