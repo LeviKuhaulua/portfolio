@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./public/dist"),
     filename: "[name].js",
+    assetModuleFilename: "assets/[name][ext]",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -26,6 +27,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.pdf$/i,
+        type: "asset/resource",
       },
     ],
   },
