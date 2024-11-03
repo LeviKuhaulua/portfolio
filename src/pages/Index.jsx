@@ -17,7 +17,8 @@ const Index = () => {
         <Button name="experience" />
         <Button name="download resume" download={Resume} />
       </Navbar>
-      <Section name="Experience"></Section>
+      <Section name="projects"></Section>
+      <Section name="experience"></Section>
       <Footer />
     </div>
   );
