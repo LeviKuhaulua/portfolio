@@ -1,12 +1,12 @@
 import * as React from "react";
 import "../styles/styles.css";
 
-const Component = () => {
+const Section = (props) => {
   return (
     <>
-      <h1>Hello World!</h1>
+      <h1>{props.name}</h1>
     </>
   );
 };
 
-export default Component;
+export default Section;
