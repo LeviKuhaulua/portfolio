@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Section from "../components/Section";
+import Experience from "../components/Experience";
 import Resume from "../assets/LeviKuhaulua_Resume_2024.pdf";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       </Navbar>
       <Section name="projects"></Section>
       <Section name="experience"></Section>
+      <Experience />
       <Footer />
     </div>
   );
