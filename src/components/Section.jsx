@@ -14,7 +14,6 @@ const Section = (props) => {
         ></div>
         <p className="text-2xl font-medium text-text capitalize">
           {props.name}
-          lorem ipsum
         </p>
 
         {/* TODO: After creating experience and project section, add the children here and style it */}
