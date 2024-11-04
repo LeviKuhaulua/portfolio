@@ -4,7 +4,7 @@ import "../styles/styles.css";
 const Section = (props) => {
   return (
     <>
-      <section id={props.name} className="flex flex-col gap-4.5 py-5">
+      <section id={props.name} className="flex flex-col gap-4.5 py-5 md:w-fit">
         <div
           className="h-[5px] rounded-md border border-[#CED1A1] content-none"
           role="presentation"
