@@ -591,6 +591,15 @@ video {
   width: 100vw;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.max-w-prose {
+  max-width: 65ch;
+}
+
 .scale-125 {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -793,6 +802,11 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .md\:max-w-prose {
     max-width: 65ch;
   }
