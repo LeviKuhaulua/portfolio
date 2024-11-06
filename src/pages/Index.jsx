@@ -20,7 +20,10 @@ const Index = () => {
       </Navbar>
       <Section name="projects"></Section>
       <Section name="experience"></Section>
-      <Experience />
+      <Experience
+        title="Web Developer (Club Member)"
+        location="AUG 2024 - PRESENT | UH Mānoa"
+      />
       <Footer />
     </div>
   );
