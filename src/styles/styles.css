@@ -726,6 +726,16 @@ video {
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -736,8 +746,17 @@ video {
   line-height: 1rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-extralight {
   font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -748,8 +767,28 @@ video {
   font-weight: 400;
 }
 
+.font-thin {
+  font-weight: 100;
+}
+
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.text-accent {
+  color: oklab(75.43% -0.056 0.12);
 }
 
 .text-background {
@@ -758,6 +797,10 @@ video {
 
 .text-gray-300\/80 {
   color: rgb(209 213 219 / 0.8);
+}
+
+.text-primary {
+  color: oklab(71.59% 0.077 -0.10);
 }
 
 .text-text {
