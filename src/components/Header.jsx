@@ -4,7 +4,7 @@ import "../styles/styles.css";
 const Header = () => {
   return (
     <>
-      <header className="w-screen flex flex-col justify-center items-center gap-4 py-4 md:flex-row md:justify-start md:items-start md:px-10 md:py-10 md:gap-12">
+      <header className="max-w-screen flex flex-col justify-center items-center gap-4 py-4 md:flex-row md:justify-start md:items-start md:px-10 md:py-10 md:gap-12">
         <section className="space-y-5">
           <h1 className="text-2xl font-medium lg:text-3xl lg:font-semibold">
             Levi Kuhaulua
