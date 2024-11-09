@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import Experience from "../components/Experience";
+import Project from "../components/Project";
 import Resume from "../assets/LeviKuhaulua_Resume_2024.pdf";
 
 const Index = () => {
@@ -20,7 +21,7 @@ const Index = () => {
       </Navbar>
       <Section name="projects"></Section>
       <Section name="experience"></Section>
-      <Experience
+      {/* <Experience
         title="Web Developer (Club Member)"
         location="Aug 2024 - Present | 8bit Club @ UH Mānoa"
         duties="Implement responsive and user-friendly components and pages in React, Collaborate with other team members to complete tasks in a timely manner."
@@ -34,7 +35,9 @@ const Index = () => {
         title="Technical Analyst Assistant"
         location="Oct 2022 - May 2024 | Hawai'i Pacific University"
         duties="Boosted teacher and student satisfaction by resolving over 1200 tickets on hardware and software related issues, Created over 30 pages of documentation on resolving complex issues - leading to an increase in response times"
-      />
+      /> */}
+
+      <Project />
       <Footer />
     </div>
   );
