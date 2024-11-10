@@ -32,6 +32,10 @@ module.exports = {
         test: /\.pdf$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.webp$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
