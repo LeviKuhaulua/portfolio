@@ -9,6 +9,7 @@ import Section from "../components/Section";
 import Experience from "../components/Experience";
 import Project from "../components/Project";
 import Resume from "../assets/LeviKuhaulua_Resume_2024.pdf";
+import portfolio from "../assets/portfolio.webp";
 
 const Index = () => {
   return (
@@ -37,7 +38,7 @@ const Index = () => {
         duties="Boosted teacher and student satisfaction by resolving over 1200 tickets on hardware and software related issues, Created over 30 pages of documentation on resolving complex issues - leading to an increase in response times"
       /> */}
 
-      <Project />
+      <Project link={portfolio} label="Portfolio" />
       <Footer />
     </div>
   );
