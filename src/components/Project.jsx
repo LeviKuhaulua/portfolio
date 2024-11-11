@@ -55,29 +55,32 @@ const Project = (props) => {
                 <ul>
                   <p className="font-medium">Built With:</p>
                   <li>{props.frontend}</li>
-                  {props.backend ? <li>{props.backend}</li> : null}
+                  <li>{props.backend}</li>
                 </ul>
+                {/* Links  */}
                 <ul className="space-y-2">
-                  <li>
-                    {/* Github repo link */}
-                    <a
-                      href={props.github}
-                      className="underline"
-                      target={"_blank"}
-                    >
-                      Source Code
-                    </a>
-                  </li>
-                  <li>
-                    {/* Website link */}
-                    <a
-                      href={props.website}
-                      className="underline"
-                      target={"_blank"}
-                    >
-                      Preview Site
-                    </a>
-                  </li>
+                  {props.github ? (
+                    <li>
+                      <a
+                        href={props.github}
+                        className="underline"
+                        target={"_blank"}
+                      >
+                        Source Code
+                      </a>
+                    </li>
+                  ) : null}
+                  {props.website ? (
+                    <li>
+                      <a
+                        href={props.website}
+                        className="underline"
+                        target="_blank"
+                      >
+                        Preview Site
+                      </a>
+                    </li>
+                  ) : null}
                 </ul>
               </section>
             </>
