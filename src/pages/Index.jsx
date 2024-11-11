@@ -7,7 +7,12 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import Experience from "../components/Experience";
+import Project from "../components/Project";
 import Resume from "../assets/LeviKuhaulua_Resume_2024.pdf";
+import portfolio from "../assets/portfolio.webp";
+import kms from "../assets/kms.webp";
+import compscihi from "../assets/compscihi.webp";
+import fhs from "../assets/fhs.webp";
 
 const Index = () => {
   return (
@@ -35,6 +40,34 @@ const Index = () => {
         location="Oct 2022 - May 2024 | Hawai'i Pacific University"
         duties="Boosted teacher and student satisfaction by resolving over 1200 tickets on hardware and software related issues, Created over 30 pages of documentation on resolving complex issues - leading to an increase in response times"
       />
+
+      <Project
+        link={portfolio}
+        label="Portfolio"
+        description="Portfolio website built to help develop my skills in web development."
+        frontend="Tailwind, React, Webpack"
+        github="https://github.com/LeviKuhaulua/portfolio"
+        website="https://levikuhaulua.github.io/portfolio"
+      />
+
+      <Project
+        link={compscihi}
+        label="Compscihi"
+        description="Helping students at UH Mānoa find and apply to tech related opportunities."
+        frontend="React, TypeScript, Webpack"
+        backend="Django, Firebase"
+        github="https://github.com/8bitUHM/compscihi"
+        website="https://compscihi.com"
+      />
+
+      <Project
+        link={kms}
+        label="eSports Revamp"
+        description="Standardize workflows to simplify software updates and prevent unauthorized software installations"
+        frontend="Powershell"
+        backend="Group Polices"
+      />
+
       <Footer />
     </div>
   );
