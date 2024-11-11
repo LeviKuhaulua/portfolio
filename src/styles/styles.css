@@ -936,6 +936,13 @@ video {
   content: var(--tw-content);
 }
 
+.root,
+:root {
+  background-color: oklab(15.68% 0.023 -0.04);
+  color: white;
+  min-height: 100vh;
+}
+
 .hover\:bg-accent:hover {
   background-color: oklab(75.43% -0.056 0.12);
 }
