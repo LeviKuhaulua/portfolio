@@ -16,7 +16,7 @@ import fhs from "../assets/fhs.webp";
 
 const Index = () => {
   return (
-    <div className="min-h-screen text-white bg-background">
+    <div>
       <Header />
       <Navbar>
         <Button name="projects" />
