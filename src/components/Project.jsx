@@ -2,8 +2,8 @@ import * as React from "react";
 import { useState } from "react";
 
 /**
- * Check to see what HTML Element triggered an event.
- * @param {Event} evt - returns user triggered event
+ * Check to see what HTML Element triggered the event.
+ * @param {Event} evt - user triggered event
  * @returns the element that triggered the event.
  */
 function checkTarget(evt) {
@@ -18,6 +18,7 @@ const Project = (props) => {
         <button
           type="button"
           className="grid isolate gap-3 overflow-hidden"
+          // Prevents card from changing state when a link is clicked.
           onClick={(evt) => (!checkTarget(evt) ? setOpen(!open) : null)}
           aria-label={`Click me to learn more about the ${props.label} project`}
         >
