@@ -1,6 +1,15 @@
 import * as React from "react";
 import { useState } from "react";
 
+/**
+ * Check to see what HTML Element triggered an event.
+ * @param {Event} evt - returns user triggered event
+ * @returns the element that triggered the event.
+ */
+function checkTarget(evt) {
+  return evt.target.tagName == "LI" || evt.target.tagName == "A";
+}
+
 const Project = (props) => {
   const [open, setOpen] = useState(false);
   return (
@@ -13,7 +22,9 @@ const Project = (props) => {
               ? "cursor-pointer w-full h-full grid isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-transparent after:from-20% after:to-black after:to-90% "
               : "cursor-pointer w-full h-full grid gap-3 isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-black/75 after:from-100% "
           }
-          onClick={() => setOpen(!open)}
+          onClick={(evt) => {
+            !checkTarget(evt) ? setOpen(!open) : null;
+          }}
         >
           {!open ? (
             <>
@@ -51,13 +62,21 @@ const Project = (props) => {
                 <ul>
                   <li>
                     {/* Github repo link */}
-                    <a href={props.github} className="underline">
+                    <a
+                      href={props.github}
+                      className="underline"
+                      target={"_blank"}
+                    >
                       Source Code
                     </a>
                   </li>
                   <li>
                     {/* Website link */}
-                    <a href={props.website} className="underline">
+                    <a
+                      href={props.website}
+                      className="underline"
+                      target={"_blank"}
+                    >
                       Preview Site
                     </a>
                   </li>
