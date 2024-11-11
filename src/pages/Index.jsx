@@ -38,7 +38,16 @@ const Index = () => {
         duties="Boosted teacher and student satisfaction by resolving over 1200 tickets on hardware and software related issues, Created over 30 pages of documentation on resolving complex issues - leading to an increase in response times"
       /> */}
 
-      <Project link={portfolio} label="Portfolio" />
+      <Project
+        link={portfolio}
+        label="Portfolio"
+        description="Portfolio website built to help develop my skills in web development."
+        frontend="Tailwind, React, Webpack"
+        backend="Python, Node"
+        github="https://github.com/LeviKuhaulua/portfolio"
+        website="https://levikuhaulua.github.io/portfolio"
+      />
+
       <Footer />
     </div>
   );
