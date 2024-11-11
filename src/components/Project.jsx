@@ -22,9 +22,7 @@ const Project = (props) => {
               ? "cursor-pointer w-full h-full grid isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-transparent after:from-20% after:to-black after:to-90% "
               : "cursor-pointer w-full h-full grid gap-3 isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-black/75 after:from-100% "
           }
-          onClick={(evt) => {
-            !checkTarget(evt) ? setOpen(!open) : null;
-          }}
+          onClick={(evt) => (!checkTarget(evt) ? setOpen(!open) : null)}
         >
           {!open ? (
             <>
@@ -37,7 +35,7 @@ const Project = (props) => {
                 className="col-span-full row-span-full object-fill"
               />
               <p className="col-span-full row-span-full self-end justify-self-center text-xl font-bold my-6 text-white z-10">
-                Learn More
+                {props.label}
               </p>
             </>
           ) : (
@@ -51,15 +49,15 @@ const Project = (props) => {
               <section className="col-span-full row-span-full my-6 px-3 text-white z-10 flex flex-col gap-4 text-start text-lg text-pretty">
                 <p className="text-xl font-bold text-center">{props.label}</p>
                 <div>
-                  <p>Description:</p>
+                  <p className="font-medium">Description:</p>
                   <p>{props.description}</p>
                 </div>
                 <ul>
-                  <p>Built With:</p>
+                  <p className="font-medium">Built With:</p>
                   <li>{props.frontend}</li>
                   {props.backend ? <li>{props.backend}</li> : null}
                 </ul>
-                <ul>
+                <ul className="space-y-2">
                   <li>
                     {/* Github repo link */}
                     <a
