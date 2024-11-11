@@ -17,74 +17,60 @@ const Project = (props) => {
       <article className="w-[325px] h-[425px]">
         <button
           type="button"
-          className={
-            !open
-              ? "cursor-pointer w-full h-full grid isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-transparent after:from-20% after:to-black after:to-90% "
-              : "cursor-pointer w-full h-full grid gap-3 isolate relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:block after:bg-gradient-to-b after:from-black/75 after:from-100% "
-          }
+          className="grid isolate gap-3 overflow-hidden"
           onClick={(evt) => (!checkTarget(evt) ? setOpen(!open) : null)}
+          aria-label={`Click me to learn more about the ${props.label} project`}
         >
-          {!open ? (
-            <>
-              <p className="sr-only">
-                Click me to learn more about the {props.label} project
-              </p>
-              <img
-                src={props.link}
-                role="presentation"
-                className="col-span-full row-span-full object-fill"
-              />
-              <p className="col-span-full row-span-full self-end justify-self-center text-xl font-bold my-6 text-white z-10">
-                {props.label}
-              </p>
-            </>
-          ) : (
-            // Shows project info here.
-            <>
-              <img
-                src={props.link}
-                role="presentation"
-                className="col-span-full row-span-full object-fill"
-              />
-              <section className="col-span-full row-span-full my-6 px-3 text-white z-10 flex flex-col gap-4 text-start text-lg text-pretty">
-                <p className="text-xl font-bold text-center">{props.label}</p>
-                <div>
-                  <p className="font-medium">Description:</p>
-                  <p>{props.description}</p>
-                </div>
-                <ul>
-                  <p className="font-medium">Built With:</p>
-                  <li>{props.frontend}</li>
-                  <li>{props.backend}</li>
-                </ul>
-                {/* Links  */}
-                <ul className="space-y-2">
-                  {props.github ? (
-                    <li>
-                      <a
-                        href={props.github}
-                        className="underline"
-                        target={"_blank"}
-                      >
-                        Source Code
-                      </a>
-                    </li>
-                  ) : null}
-                  {props.website ? (
-                    <li>
-                      <a
-                        href={props.website}
-                        className="underline"
-                        target="_blank"
-                      >
-                        Preview Site
-                      </a>
-                    </li>
-                  ) : null}
-                </ul>
-              </section>
-            </>
-          )}
+          <img
+            src={props.link}
+            role="presentation"
+            className="col-span-full row-span-full object-fill"
+          />
+
+          <section
+            className="col-span-full row-span-full w-full h-full px-3 py-6 flex flex-col gap-4 text-start text-lg text-pretty bg-gradient-to-b from-black/75 to-black/60 transition-transform duration-500 ease-in-out motion-reduce:transition-none motion-reduce:duration-0"
+            style={
+              !open
+                ? { transform: "translateY(83%)" }
+                : { transform: "translateY(0)" }
+            }
+            aria-hidden={!open}
+          >
+            <h2 className="text-xl font-bold text-center">{props.label}</h2>
+            {/* Description */}
+            <div>
+              <p className="font-medium">Description:</p>
+              <p>{props.description}</p>
+            </div>
+            {/* Technologies/Stacks */}
+            <ul>
+              <p className="font-medium">Built With:</p>
+              <li>{props.frontend}</li>
+              <li>{props.backend}</li>
+            </ul>
+            {/* Links  */}
+            <ul className="space-y-2 w-max max-w-full">
+              {props.github ? (
+                <li>
+                  <a
+                    href={props.github}
+                    className="underline"
+                    target={"_blank"}
+                  >
+                    View Source Code
+                  </a>
+                </li>
+              ) : null}
+
+              {props.website ? (
+                <li>
+                  <a href={props.website} className="underline" target="_blank">
+                    Preview Site
+                  </a>
+                </li>
+              ) : null}
+            </ul>
+          </section>
         </button>
       </article>
     </>
