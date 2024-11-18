@@ -3,8 +3,12 @@ name: Portfolio Deploy
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - .github/workflows/**
   pull_request:
     branches: ["main"]
+    paths-ignore:
+      - .github/workflows/**
 
   workflow_dispatch:
 
@@ -36,5 +40,4 @@ jobs:
           server: ${{ secrets.SSH_SERVER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: public/*
-          remote_path: /hm01/l/leviak/public_html
-          delete_remote_files: true
+          remote_path: /hm01/l/leviak/public_html/
