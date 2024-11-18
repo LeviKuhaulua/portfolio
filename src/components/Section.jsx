@@ -19,7 +19,7 @@ const Section = (props) => {
         {/* Child Components */}
 
         {props.sidescroll ? (
-          <section className="grid grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory md:gap-5 *:snap-always *:snap-center">
+          <section className="grid grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory *:snap-always *:snap-center md:gap-5 lg:max-xl:grid-flow-row md:max-xl:grid-cols-2">
             {props.children}
           </section>
         ) : (
