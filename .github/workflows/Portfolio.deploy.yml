@@ -31,12 +31,10 @@ jobs:
 
       - name: Deploy to Unix Server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with: 
-           username: ${{ secrets.SSH_USERNAME }}
-           server: ${{ secrets.SSH_SERVER }}
-           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-           local_path: ./public/*
-           remote_path: /hm01/l/leviak/public_html
-           
-           
-            
+        with:
+          username: ${{ secrets.SSH_USERNAME }}
+          server: ${{ secrets.SSH_SERVER }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          local_path: ./public/*
+          remote_path: /hm01/l/leviak/public_html
+          delete_remote_files: true
