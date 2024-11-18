@@ -5,7 +5,7 @@ const Experience = (props) => {
   return (
     <>
       <article>
-        <hgroup className="mb-6">
+        <hgroup className="mb-4">
           <h4 className="text-primary text-sm font-medium leading-8 md:text-xl">
             {props.title}
           </h4>
@@ -14,7 +14,7 @@ const Experience = (props) => {
           </p>
         </hgroup>
 
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-inside space-y-2 md:space-y-0">
           {props.duties
             ? props.duties.split(",").map((value, index) => (
                 <li
