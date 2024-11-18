@@ -35,17 +35,17 @@ const Project = (props) => {
                 ? { transform: "translateY(83%)" }
                 : { transform: "translateY(0)" }
             }
-            aria-hidden={!open}
+            aria-hidden={`${!open}`}
           >
             <h2 className="text-xl font-bold text-center">{props.label}</h2>
             {/* Description */}
-            <div>
-              <p className="font-medium">Description:</p>
+            <section tabIndex={!open ? "-1" : "0"}>
+              <h3 className="font-medium">Description:</h3>
               <p>{props.description}</p>
-            </div>
+            </section>
             {/* Technologies/Stacks */}
             <ul>
-              <p className="font-medium">Built With:</p>
+              <h4 className="font-medium">Built With:</h4>
               <li>{props.frontend}</li>
               <li>{props.backend}</li>
             </ul>
@@ -57,6 +57,7 @@ const Project = (props) => {
                     href={props.github}
                     className="underline"
                     target={"_blank"}
+                    tabIndex={!open ? "-1" : "0"}
                   >
                     View Source Code
                   </a>
@@ -65,7 +66,12 @@ const Project = (props) => {
 
               {props.website ? (
                 <li>
-                  <a href={props.website} className="underline" target="_blank">
+                  <a
+                    href={props.website}
+                    className="underline"
+                    target="_blank"
+                    tabIndex={!open ? "-1" : "0"}
+                  >
                     Preview Site
                   </a>
                 </li>
