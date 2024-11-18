@@ -938,6 +938,14 @@ video {
   background-color: oklab(48.82% 0.060 0.08);
 }
 
+.focus\:bg-accent:focus {
+  background-color: oklab(75.43% -0.056 0.12);
+}
+
+.focus\:bg-secondary:focus {
+  background-color: oklab(48.82% 0.060 0.08);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .motion-reduce\:transition-none {
     transition-property: none;
