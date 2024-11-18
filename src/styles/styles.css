@@ -750,8 +750,16 @@ video {
   list-style-type: disc;
 }
 
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
+}
+
+.auto-rows-auto {
+  grid-auto-rows: auto;
 }
 
 .grid-cols-4 {
@@ -760,6 +768,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-3 {
@@ -1152,6 +1164,14 @@ video {
   min-height: 100vh;
 }
 
+.\*\:col-span-3 > * {
+  grid-column: span 3 / span 3;
+}
+
+.\*\:row-span-3 > * {
+  grid-row: span 3 / span 3;
+}
+
 .\*\:me-4 > * {
   margin-inline-end: 1rem;
 }
@@ -1170,6 +1190,14 @@ video {
 
 .\*\:snap-always > * {
   scroll-snap-stop: always;
+}
+
+.\*\:grid-cols-subgrid > * {
+  grid-template-columns: subgrid;
+}
+
+.\*\:grid-rows-subgrid > * {
+  grid-template-rows: subgrid;
 }
 
 .\*\:px-4 > * {
@@ -1234,6 +1262,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1260,6 +1292,12 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:text-pretty {
