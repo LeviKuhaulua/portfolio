@@ -578,8 +578,8 @@ video {
   grid-row: 1 / -1;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-10 {
@@ -638,12 +638,32 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
 .list-inside {
   list-style-position: inside;
 }
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.auto-rows-auto {
+  grid-auto-rows: auto;
 }
 
 .flex-row {
@@ -682,6 +702,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -702,8 +726,16 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .text-pretty {
   text-wrap: pretty;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-md {
@@ -928,6 +960,23 @@ video {
   background-color: oklab(15.68% 0.023 -0.04);
   color: white;
   min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.\*\:row-span-3 > * {
+  grid-row: span 3 / span 3;
+}
+
+.\*\:snap-center > * {
+  scroll-snap-align: center;
+}
+
+.\*\:snap-always > * {
+  scroll-snap-stop: always;
+}
+
+.\*\:grid-rows-subgrid > * {
+  grid-template-rows: subgrid;
 }
 
 .hover\:bg-accent:hover {
@@ -957,13 +1006,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
   .md\:max-w-prose {
     max-width: 65ch;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -984,6 +1032,12 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:text-pretty {
@@ -1031,6 +1085,10 @@ video {
 
   .md\:font-extralight {
     font-weight: 200;
+  }
+
+  .md\:\*\:snap-start > * {
+    scroll-snap-align: start;
   }
 }
 
