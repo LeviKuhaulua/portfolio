@@ -9,7 +9,7 @@ const Button = (props) => {
         <a
           href={props.download}
           download={true}
-          className="bg-transparent border border-secondary text-text text-sm font-normal text-center capitalize px-4 py-1.5 rounded-md hover:bg-secondary transition-colors duration-[250ms] lg:text-lg"
+          className="bg-transparent border border-secondary text-text text-sm font-normal text-center capitalize px-4 py-1.5 rounded-md hover:bg-secondary focus:bg-secondary transition-colors duration-[250ms] lg:text-lg"
         >
           {props.name}
         </a>
@@ -17,7 +17,7 @@ const Button = (props) => {
         // Link to different sections of webpage
         <a
           href={"#" + props.name}
-          className="bg-primary capitalize text-center text-background text-sm font-medium px-4 py-1.5 border-0 rounded-md hover:bg-accent transition-colors duration-[250ms] lg:text-lg"
+          className="bg-primary capitalize text-center text-background text-sm font-medium px-4 py-1.5 border-0 rounded-md hover:bg-accent focus:bg-accent transition-colors duration-[250ms] lg:text-lg"
         >
           {props.name}
         </a>
