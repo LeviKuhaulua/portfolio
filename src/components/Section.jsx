@@ -23,7 +23,9 @@ const Section = (props) => {
             {props.children}
           </section>
         ) : (
-          <section>{props.children}</section>
+          <section className="grid grid-flow-row auto-rows-auto gap-8 md:grid-cols-3 *:grid-rows-subgrid *:row-span-3">
+            {props.children}
+          </section>
         )}
       </section>
     </>
