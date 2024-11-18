@@ -50,6 +50,14 @@ const Index = () => {
           frontend="Powershell"
           backend="Group Polices"
         />
+
+        <Project
+          link={fhs}
+          label="FHS Academics"
+          description="Give awareness to AP/AVID program at Farrington High School. "
+          frontend="React, TypeScript, Webpack"
+          backend="Django, SQLite"
+        />
       </Section>
 
       <Section name="experience">
