@@ -1314,6 +1314,10 @@ video {
     font-weight: 200;
   }
 
+  .md\:\*\:snap-start > * {
+    scroll-snap-align: start;
+  }
+
   @media not all and (min-width: 1280px) {
     .md\:max-xl\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
