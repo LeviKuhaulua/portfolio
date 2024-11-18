@@ -6,7 +6,7 @@ const Section = (props) => {
     <>
       <section
         id={props.name}
-        className="flex flex-col gap-4.5 py-5 px-4 md:px-7 md:w-fit"
+        className="flex flex-col gap-7 py-5 px-4 md:px-7 md:w-fit"
       >
         <div
           className="h-[5px] rounded-md border border-[#CED1A1] content-none"
@@ -16,8 +16,15 @@ const Section = (props) => {
           {props.name}
         </p>
 
-        {/* TODO: After creating experience and project section, add the children here and style it */}
-        {/* {props.children} */}
+        {/* Child Components */}
+
+        {props.sidescroll ? (
+          <section className="grid grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory md:gap-5 *:snap-always *:snap-center">
+            {props.children}
+          </section>
+        ) : (
+          <section>{props.children}</section>
+        )}
       </section>
     </>
   );
