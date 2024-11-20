@@ -8,7 +8,7 @@ import Button from "../components/Button";
 import Section from "../components/Section";
 import Experience from "../components/Experience";
 import Project from "../components/Project";
-import Resume from "../assets/LeviKuhaulua_Resume_2024.pdf";
+import Resume from "../assets/LeviKuhaulua_Resume.pdf";
 import portfolio from "../assets/portfolio.webp";
 import kms from "../assets/kms.webp";
 import compscihi from "../assets/compscihi.webp";
