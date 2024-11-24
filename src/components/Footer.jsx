@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="text-sm font-normal border-t border-t-white/30 mt-10 pt-4 flex flex-col flex-wrap justify-start items-center gap-8 lg:border-t-0">
         <p>
-          &copy; Levi Kuhaulua {new Date().getFullYear()}, All rights reserved
+          &copy; Levi Kuhaulua 2024, All rights reserved
         </p>
         <a href="#" className="border border-accent p-2 rounded-md">
           <p className="sr-only">Go back to top of page</p>
