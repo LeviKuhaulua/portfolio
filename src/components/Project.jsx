@@ -39,7 +39,7 @@ const Project = (props) => {
           >
             <h2 className="text-xl font-bold text-center">{props.label}</h2>
             {/* Description */}
-            <section tabIndex={!open ? "-1" : "0"}>
+            <section tabIndex={!open ? "-1" : "1"}>
               <h3 className="font-medium">Description:</h3>
               <p>{props.description}</p>
             </section>
@@ -50,14 +50,14 @@ const Project = (props) => {
               <li>{props.backend}</li>
             </ul>
             {/* Links  */}
-            <ul className="space-y-2 w-max max-w-full">
+            <ul className="space-y-2 w-max max-w-full" tabIndex={!open ? "-1" : "2"}>
               {props.github ? (
                 <li>
                   <a
                     href={props.github}
                     className="underline"
                     target={"_blank"}
-                    tabIndex={!open ? "-1" : "0"}
+                    tabIndex={!open ? "-1" : "4"}
                   >
                     View Source Code
                   </a>
@@ -70,7 +70,7 @@ const Project = (props) => {
                     href={props.website}
                     className="underline"
                     target="_blank"
-                    tabIndex={!open ? "-1" : "0"}
+                    tabIndex={!open ? "-1" : "5"}
                   >
                     Preview Site
                   </a>
