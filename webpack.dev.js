@@ -3,4 +3,5 @@ const webpackConfig = require('./webpack.config.js');
 
 module.exports = merge(webpackConfig, {
     mode: 'development',
+    watch: true,
 });
