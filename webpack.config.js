@@ -5,7 +5,7 @@ module.exports = {
     index: "./src/pages/Index.jsx",
   },
   output: {
-    path: path.resolve(__dirname, "./public/dist"),
+    path: path.resolve(__dirname, "public", "dist"),
     filename: "[name].js",
     assetModuleFilename: "assets/[name][ext]",
   },
