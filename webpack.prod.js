@@ -5,7 +5,7 @@ module.exports = merge(webpackConfig, {
     mode: 'production',
     watch: false, 
     output: {
-        publicPath: 'dist/',  
+        publicPath: './dist/',  
         clean: true, 
     }
 })
