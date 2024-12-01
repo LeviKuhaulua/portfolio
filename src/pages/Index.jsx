@@ -48,7 +48,7 @@ const Index = () => {
           label="eSports Revamp"
           description="Standardize workflows to simplify software updates and prevent unauthorized software installations"
           frontend="Powershell"
-          backend="Group Polices"
+          backend="Group Policies"
         />
 
         <Project
