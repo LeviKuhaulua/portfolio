@@ -8,6 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, "public", "dist"),
     filename: "[name].js",
     assetModuleFilename: "assets/[name][ext]",
+    publicPath: '/dist/'
   },
   resolve: {
     extensions: [".js", ".jsx"],
