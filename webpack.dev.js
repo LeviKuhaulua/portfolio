@@ -4,6 +4,9 @@ const webpackConfig = require('./webpack.config.js');
 
 module.exports = merge(webpackConfig, {
     mode: 'development',
+    output: {
+        publicPath: '/dist/',
+    },
     devServer: {
         open: true,
         port: 5500, 
