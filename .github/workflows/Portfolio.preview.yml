@@ -1,0 +1,46 @@
+name: Preview Site
+
+on: 
+  push:
+    branches: ["preview"]
+    paths-ignore:
+      - .github/workflows/**
+      - .gitignore
+      - README.md
+
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+        - uses: actions/checkout@v4
+
+        - name: Setup Environment
+          uses: actions/setup-node@v4
+          with: 
+            node-version: 18.x 
+        
+        - name: Install Packages
+          run: npm ci
+
+        - name: Build Preview
+          run: npm run build -if-present
+
+        - name: Deploy to Preview Branch
+          uses: JamesIves/github-pages-deploy-action@v4.6.8
+          with:
+            branch: preview-site
+            folder: public
+        
+        - name: Deploy to Preview Site
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+            username: ${{ secrets.SSH_USERNAME }}
+            server: ${{ secrets.SSH_SERVER }}
+            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+            local_path: ./public/*
+            remote_path: /hm01/l/leviak/public_html/public
+  
