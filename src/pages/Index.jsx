@@ -44,19 +44,20 @@ const Index = () => {
         />
 
         <Project
+          link={fhs}
+          label="FHS Academics"
+          description="Give awareness to AP/AVID program at Farrington High School. "
+          frontend="React, TypeScript, Webpack"
+          backend="Django, PostgreSQL"
+          github="https://github.com/LeviKuhaulua/fhsacademics"
+        />
+        
+        <Project
           link={kms}
           label="eSports Revamp"
           description="Standardize workflows to simplify software updates and prevent unauthorized software installations"
           frontend="Powershell"
           backend="Group Policies"
-        />
-
-        <Project
-          link={fhs}
-          label="FHS Academics"
-          description="Give awareness to AP/AVID program at Farrington High School. "
-          frontend="React, TypeScript, Webpack"
-          backend="Django, SQLite"
         />
       </Section>
 
