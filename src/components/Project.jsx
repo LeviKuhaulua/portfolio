@@ -50,14 +50,14 @@ const Project = (props) => {
               <li>{props.backend}</li>
             </ul>
             {/* Links  */}
-            <ul className="space-y-2 w-max max-w-full" tabIndex={!open ? "-1" : "2"}>
+            <ul className="space-y-2 w-max max-w-full" >
               {props.github ? (
                 <li>
                   <a
                     href={props.github}
                     className="underline"
                     target={"_blank"}
-                    tabIndex={!open ? "-1" : "4"}
+                    tabIndex={!open ? "-1" : "0"}
                   >
                     View Source Code
                   </a>
@@ -70,7 +70,7 @@ const Project = (props) => {
                     href={props.website}
                     className="underline"
                     target="_blank"
-                    tabIndex={!open ? "-1" : "5"}
+                    tabIndex={!open ? "-1" : "0"}
                   >
                     Preview Site
                   </a>
